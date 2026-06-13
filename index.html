@@ -12,9 +12,9 @@
         <p style="color: black; margin-left: 16px; background-color: rgba(256, 256, 0.25) ; padding: 4px 12px; border-radius: 16px;">
             black Holes 
         </p>
-        <p 
+        <p id="timeElement"
         style="color: black; margin-right: 16px; background-color: rgba(256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
-           6/13/2026 4:43 PM
+           Time 
         </p>
     </div>
     <div style="position: absolute; top: 50%; left: 50%; transform: translte(-50%, -50%)(additional styes)">
@@ -28,4 +28,8 @@
     <a href="https://www.nasa.gov" style="color: white;">for more info Visit NASA</a>
     <p style="color: azure;">ready to explore one of the most mysterious objects in the universe.</p>
     </div>
+    <script>
+        var currentTime = new Date().toLocalString();
+        var TimeText = document.querySelector("#timeElement");
+    </script>
 </body>
