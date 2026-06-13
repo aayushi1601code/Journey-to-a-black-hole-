@@ -29,8 +29,14 @@
     <p style="color: azure;">ready to explore one of the most mysterious objects in the universe.</p>
     </div>
     <script>
+
+        function updateTime() { 
         var currentTime = new Date().toLocalString();
-        var TimeText = document.querySelector("#timeElement");
-        TimeText.innerHTML = currentTime
+        var TimeText =
+ document.querySelector("#timeElement");
+        TimeText.innerHTML = currentTime;
+        }
+        setInterval(updateTime, 1000);
+
     </script>
 </body>
