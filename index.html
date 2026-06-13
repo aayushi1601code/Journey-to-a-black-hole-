@@ -32,8 +32,7 @@
 
         function updateTime() { 
         var currentTime = new Date().toLocalString();
-        var timeText =
- document.querySelector("#timeElement");
+        var timeText = document.querySelector("#timeElement");
         timeText.innerHTML = currentTime;
         }
         setInterval(updateTime, 100);
