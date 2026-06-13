@@ -12,7 +12,7 @@
         <p style="color: black; margin-left: 16px; background-color: rgba(256, 256, 0.25) ; padding: 4px 12px; border-radius: 16px;">
             black Holes 
         </p>
-        <p id="timeElement"style="color: black; margin-right: 16px; background-color: rgba(256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+        <p id="timeElement" style="color: black; margin-right: 16px; background-color: rgba(256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
             Time
         </p>
     </div>
@@ -28,12 +28,13 @@
     <p style="color: azure;">ready to explore one of the most mysterious objects in the universe.</p>
     </div>
     <script>
-        function updateTime() {
-            var currentTime = new Date().toLocalString();
-            var timeText = document.querySelector("#timeElement");
-            timeText.innerHTML = currentTime;
-        }
-        updateTime();
-        setInterval(updateTime, 1000)
+    function updateTime() {
+        var currentTime = new Date().toLocalString();
+        var timeText = document.querySelector("#timeElement");
+        timeText.innerHTML = currentTime;
+    }
+    
+    updateTime();
+    setInterval(updateTime, 1000)
     </script>
-    </body>
+</body>
