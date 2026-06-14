@@ -16,7 +16,7 @@
             Time
         </p>
     </div>
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)(additional style);
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
     <h1 style="color: rgb(241, 160, 9);">🌌 Into the heart of a  Black Hole</h1>
     <p style="color: white;">Hi! I'm Aayushi and I'm fascinated by black holes, space and the mystries of the universe.</p>
     <hr>
@@ -28,13 +28,16 @@
     <p style="color: azure;">ready to explore one of the most mysterious objects in the universe.</p>
     </div>
     <script>
-    function updateTime() {
-        var currentTime = new Date().toLocalString();
-        var timeText = document.querySelector("#timeElement");
-        timeText.innerHTML = currentTime;
-    }
-    
-    updateTime();
-    setInterval(updateTime, 1000)
+        function updateTime() {
+            var currentTime = newDate().toLocaleTimeString();
+            var timeText = document. querySelector("#timeElement");
+            if (timeText) {
+                timeText.innerHTML = currentTime;
+            }
+        }
+        window.addEventListener("DOMContentLoaded", function() {
+            updateTime();
+            setInterval(updateTime, 1000);
+        });
     </script>
 </body>
